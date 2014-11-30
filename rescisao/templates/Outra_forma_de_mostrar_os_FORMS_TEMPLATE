@@ -1,0 +1,11 @@
+<form action="" method="GET"> 
+  {% csrf_token %} 
+  
+
+  {% for field in form %} 
+  <div class="input-group">
+  	<span class="input-group-addon">{{ field.label_tag }}</span><span class="form-control">{{ field }} </span>
+  </div>
+  {% endfor %}
+  
+</form>

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultado - Calculos da Folha de Pagamento{% endblock %}
+
+{% block tela %}<h1>Resultado - Calculos Rescisao</h1>{% endblock %}
+
+{% block conteudo %} 
+
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title"> Resultado de Calculos Rescisao</h3>
+  </div>
+  <div class="panel-body">
+  <!-- Conteudo aqui ! -->
+<table class="table table-striped table-hover">
+  <tr><th>Empregado</th><th colspan="1">Data Admissao</th><th colspan="2">Data Saida</th></tr>
+  <tr><td>Jose de Maria</td><td>{{ f1.data_admissao }}</td><td colspan="2">{{ f1.data_saida }}</td></tr>
+  <tr><th>Tipo de Rescisao</th><th colspan="3">Aviso Previo</th></tr>
+  <tr><td>Levantar dados - Tipo de Rescisao</td><td colspan="3">Levantar dados - tipo de aviso previo</td>
+  
+  <tr></tr>
+  <tr><th>Evento</th><th>Referência</th><th>Proventos</th><th>Descontos</th></tr>
+  <tr><td>Saldo Salario</td><td>{{ f1.saldo_dias }} dias</td><td>{{ f1.saldo_salario }}</td><td></td></tr>
+  <tr><td>13 Sal.Proporcional</td><td>1/{{ f1.avos_decimo }}avos</td><td>{{ f1.dterceiro }}</td><td></td></tr>
+  <tr><td>Ferias proporcionais</td><td>1/{{ f1.avosFerias }} avos</td><td>{{ f1.feriasproporcionais }}</td><td></td></tr>
+
+  
+  <tr><td>Vale Transporte</td><td>{{ rf1.qtdvt }}</td><td>{{ rf1.totalvt }}</td><td></td></tr>
+  <tr><td>INSS - Saldo de salario</td><td>{{f1.indiceInssSaldo}}</td><td></td><td>{{ f1.vrInssSaldo }}</td></tr>
+  <tr><td>INSS - 13 salario</td><td>{{f1.indiceInssDecimo}}</td><td></td><td>{{ f1.vrInssDecimo }}</td></tr>
+  <tr><td>TOTAL</td><td></td><td>{{ f1.proventos }}</td><td>{{ f1.descontos }}</td></tr>
+  <tr><td><h2>Valor Liquido da Rescisao {{f1.vrRescisaoLiquido}}</h2></td></tr>
+
+</table> 
+
+<!-- Fim do Conteudo -->
+  </div>
+</div>
+
+{% endblock %}
+
+
+

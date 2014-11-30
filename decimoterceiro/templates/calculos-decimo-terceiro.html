@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Calculo 13 Salário{% endblock %}
+
+{% block tela %}<h3>Calculos do 13 Salário </h3>{% endblock %}
+
+{% block conteudo %} 
+<form class="form-horizontal" action="" method="GET">
+
+              {% csrf_token %} 
+              {{ form.as_p }}
+              <input type="submit" value="Calcular"/>
+</form>
+
+
+{% endblock %}

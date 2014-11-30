@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Calculo das Férias {% endblock %}
+
+{% block tela %}<h3>Calculo de Férias</h3>{% endblock %}
+
+{% block conteudo %} 
+<form class="form-horizontal" action="" method="GET">
+
+              {% csrf_token %} 
+              {{ form.as_p }}
+              <input type="submit" value="Calcular"/>
+</form>
+
+{% endblock %}

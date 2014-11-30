@@ -1,0 +1,225 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+  background-color: #e1e3e4;
+}
+footer {
+  padding: 30px 0;
+}
+/* Configuração do menu principal */
+
+.navbar-inverse {
+background-color: #fff;
+border-color: #ccc;
+}
+.navbar-inverse .navbar-nav>li>a {
+color: #6d6d6d;
+/* color: #9d9d9d; */
+}
+.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus{
+  color:#3d3d3d;
+  background-color:transparent
+  }
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus{
+  color:#fff;
+  background-color:#080808
+  }
+  .navbar-inverse .navbar-nav>.disabled>a,.navbar-inverse .navbar-nav>.disabled>a:hover,.navbar-inverse .navbar-nav>.disabled>a:focus{
+    color:#444;
+    background-color:transparent
+  }
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+ .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border: 1px solid #ddd;
+}
+
+/*** CONFIGURAÇÕES DO MENU SECUNDÁRIO DAS PÁGINAS ***/
+.nav-tabs>li>a {
+color: #5cb85c;
+margin-right: 2px;
+line-height: 1.42857143;
+border: 1px solid #5cb85c;
+border-radius: 0;
+font-weight: bold;
+background: #fff;
+}
+.nav-tabs>li>a:hover{
+border: 1px solid #5cb85c;
+background: #5cb85c;
+color: #fff;
+}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{
+  color:#555;
+  cursor:default;
+  background-color:#fff;
+  border:1px solid #ddd;
+  border-bottom-color:transparent
+}
+
+
+/* MENU LATERAL - TESTE */
+.navegacao-lateral {
+margin-left: -225px;
+left: 225px;
+width: 225px;
+position: fixed;
+top: 50px;
+height: 100%;
+border-radius: 0;
+ border: none; 
+background-color: #F3F3F3; 
+overflow-y: auto; 
+}
+
+
+/* Configurações do jumbotron **/
+
+@media screen and (min-width: 768px) { 
+  
+  .jumbotron {
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #5cb85c;
+  }
+.container .jumbotron, .container-fluid .jumbotron {
+padding-right: 30px;
+padding-left: 30px;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+border-radius: 0px;
+}
+.jumbotron h2, .jumbotron p {
+
+}
+/*  Icones - Links Pagina Inicial */
+.icones {
+  text-align: center;
+}
+/*** CONFIGURAÇÕES BANNER ****/
+.banner-lateral {
+  text-align: center;
+  padding: 25px 0;
+}
+
+
+
+  .bg-info {
+    border: 1px solid #ccc;
+    background-color: white;
+    text-align: center;
+    /*background: url(http://exame.abril.com.br/v2014/img/bg-pbc.png);*/
+  }
+
+@media screen and (max-width: 767px) {
+
+
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+/**** Configurações redes sociais ***/
+.btn-twitter {
+    background: #00acee;
+    border-radius: 0;
+    color: #fff
+}
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff
+}
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0087bd;
+    color: #fff
+}
+.btn-facebook {
+    background: #3b5998;
+    border-radius: 0;
+    color: #fff
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff
+}
+.btn-googleplus {
+    background: #e93f2e;
+    border-radius: 0;
+    color: #fff
+}
+.btn-googleplus:link, .btn-googleplus:visited {
+    color: #fff
+}
+.btn-googleplus:active, .btn-googleplus:hover {
+    background: #ba3225;
+    color: #fff
+}
+.btn-linkedin {
+    background: #0e76a8;
+    border-radius: 0;
+    color: #fff
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+    background: #0b6087;
+    color: #fff
+}

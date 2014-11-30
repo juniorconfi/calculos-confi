@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultado - Calculos da Folha de Pagamento{% endblock %}
+
+{% block tela %}<h1>Resultado - Calculos Rescisao</h1>{% endblock %}
+
+{% block conteudo %} 
+
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title"> Resultado de Calculos Ferias</h3>
+  </div>
+  <div class="panel-body">
+  <!-- Conteudo aqui ! -->
+<table class="table table-striped table-hover">
+  <tr><th>Nome</th><th>Referência</th><th>Valor</th></tr>
+  <tr><td>Salario-Base</td><td>30 dias</td><td>{{ f1.sal_bruto }}</td></tr>
+  <tr><td colspan="4"></td></tr>
+  <tr><th>Evento</th><th>Referência</th><th>Proventos</th><th>Descontos</th></tr>
+  <tr><td>Remuneracao de Ferias</td><td>30 dias</td><td>{{ f1.sal_bruto }}</td><td></td></tr>
+  <tr><td>1/3 ferias</td><td>-</td><td>{{ f1.umterco }}</td><td></td></tr>
+  <tr><td>Inss</td><td>{{ f1.indiceinss }}</td><td></td><td>{{ f1.vrinss }}</td></tr>
+
+  <tr><td>TOTAL</td><td></td><td>{{ f1.proventos }}</td><td>{{ f1.descontos }}</td></tr>
+  <tr><td><h3>Valor Liquido  {{f1.vrliquidoferias}}</h3></td></tr>
+
+</table> 
+
+<!-- Fim do Conteudo -->
+  </div>
+</div>
+
+{% endblock %}
+
+
+

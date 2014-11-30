@@ -1,0 +1,46 @@
+{% extends 'base-home.html' %}
+
+{% block title %} Calculos Confi - Calculos da Folha de Pagamento, Rescisao Trabalhista, Ferias, 13 Salario, Seguro Desemprego, etc. *** BETA Versao 0.5 *** {% endblock %}
+
+{% block tela %}<h2>Calcule e gerencie os seu funcionários</h2> <p>A Calculos Confiaveis -Disponibiliza de forma gratuita ferramentas de calculos trabalhistas e emissao de relatórios.</p> {% endblock %}
+
+{% block conteudo %} 
+<div class="col-md-3 icones icones">          
+<img class="" src="{{ STATIC_URL }}dist/imagens/icone-salarios.png" alt="Calculo da Folha pagamento - Salarios" style="width: 60px; height: 60px;">
+          <h2><a href="calculos-folha-pagamento/">Folha Pagto</a></h2>
+          <p>Calcule a folha de pagamento, desconto de inss, imposto de renda, etc.</p>
+          <p><a class="btn btn-default" href="calculos-folha-pagamento/" role="button">Acessar</a></p>
+        </div><!-- /.col-md-3 icones -->
+        
+        <div class="col-md-3 icones">
+          <img class="" src="{{ STATIC_URL }}dist/imagens/icone-rescisao.png" alt="Calculo da Rescisao" style="width: 60px; height: 60px;">
+          <h2><a href="calculos-rescisao/">Rescisão</a></h2>
+          <p>Calculo da rescisão trabalhista, saldo de salario, ferias e 13 proporcional</p>
+          <p><a class="btn btn-default" href="calculos-rescisao" role="button">Acessar</a></p>
+        </div><!-- /.col-md-3 icones -->
+        <div class="col-md-3 icones">
+          <img class="" src="{{ STATIC_URL }}dist/imagens/icone-ferias.png" alt="Calculo das Ferias" style="width: 60px; height: 60px;">
+          <h2><a href="calculos-ferias/">Férias</a></h2>
+          <p>Calculo das férias integral, proporcional, abono pecuniario.</p>
+          <p><a class="btn btn-default" href="calculos-ferias" role="button">Acessar</a></p>
+        </div><!-- /.col-md-3 icones -->
+        <div class="col-md-3 icones">
+          <img class="" src="{{ STATIC_URL }}dist/imagens/icone-decimo.png" alt="Calculo do 13º Salário" style="width: 60px; height: 60px;">
+          <h2><a href="calculos-decimo-terceiro/">13º Salário</a></h2>
+          <p>Calculo do 13 salario proporcional, integral, descontos do inss e irrf</p>
+          <p><a class="btn btn-default" href="calculos-decimo-terceiro" role="button">Acessar</a></p>
+        </div><!-- /.col-md-3 icones -->
+        <div class="col-md-3 icones">
+          <img class="" src="{{ STATIC_URL }}dist/imagens/icone-fgts.gif" alt="Generic placeholder image" style="width: 60px; height: 60px;">
+          <h2><a href="calculos-fgts/">FGTS</a></h2>
+          <p>Simulação do calculo de FGTS.</p>
+          <p><a class="btn btn-default" href="calculos-fgts" role="button">Acessar</a></p>
+        </div><!-- /.col-md-3 icones -->
+        <div class="col-md-3 icones">
+          <img class="" src="{{ STATIC_URL }}dist/imagens/icone-seguro.png" alt="Generic placeholder image" style="width: 60px; height: 60px;">
+          <h2><a href="calculos-seguro-desempreg/">S.Desemprego</a></h2>
+          <p>Simulação do calculo do Seguro Desemprego.</p>
+          <p><a class="btn btn-default" href="calculos-seguro-desemprego" role="button">Acessar</a></p>
+          </div><!-- /.col-md-3 icones -->
+
+{% endblock %}

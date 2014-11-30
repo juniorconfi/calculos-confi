@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ESCRITORIO CONFI - SISTEMA ONLINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/static/calcsalarios/bootstrap.css" media="screen">
+
+
+    <link rel="stylesheet" href="../assets/css/bootswatch.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">ESCRITORIO CONFI - SISTEMA ONLINE</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../help/">Quem Somos</a>
+              
+            </li>
+            <li>
+              <a href="../help/">Contato</a>
+            </li>
+            <li>
+              <a href="http://news.bootswatch.com">Login</a>
+            </li>
+            
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://bootswatch.com/spacelab/" target="_blank">Modelo Original</a></li>
+            <!-- <li><a href="#" target="_blank">WrapBootstrap</a></li> -->
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1>Calculos de Salarios</h1>
+            <p class="lead">Calcule o salario liquido do(a) funcionario(a)</p>
+          </div>
+
+<div class="col-lg-6">
+  <div class="page-header">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Resultado de Calculos</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped table-hover">
+          <tr><th>Codigo</th><th>Evento</th><th>Referência</th><th>Proventos</th><th>Descontos</th></tr>
+          <tr><td>1</td><td>Salario base</td><td>30 dias</td><td>{{ f1.salbruto }}</td><td>&nbsp;</td></tr>
+          <tr><td>2</td><td>INSS</td><td>8%</td><td></td><td>{{ f1.vrInssEmpregado }}</td></tr>
+        </table>
+        <h4>Valor Liquido</h4>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4>{{ f1.salLiquido }}</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <a href="calculos.html">Novo Calculo</a>
+</div>
+
+
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <div class="sponsor">
+              <a href="#" target="_blank" onclick=""><h3>Publicidade Confi</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <div class="bs-docs-section clearfix">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="page-header">
+
+              <!-- Formularios para o calculo -->
+
+			
+      </div><!-- /example -->
+          </div>
+<!--  *************************************************************************** -->
+
+
+
+
+
+
+<!--- **************************************************************************** -->
+
+
+
+
+
+
+        </div>
+      </div>		
+	  
+      
+        </div>
+      </div>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <h5>Onde Estou</h5>
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+  </body>
+</html>

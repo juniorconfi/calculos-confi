@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultado - Calculos da Folha de Pagamento{% endblock %}
+
+{% block tela %}<h1>Resultado - Salario Liquido</h1>{% endblock %}
+
+{% block conteudo %} 
+
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel success</h3>
+  </div>
+  <div class="panel-body">
+  <!-- Conteudo aqui ! -->
+<table class="table table-striped table-hover">
+   
+  <tr><th>Evento</th><th>Referência</th><th>Proventos</th><th>Descontos</th></tr>
+  <tr><td>Salario Bruto</td><td>30 dias</td><td>{{ rf1.salbruto }}</td><td></td></tr>
+  <tr><td>Hora Extra</td><td>{{ rf1.hrsextras }}</td><td>{{ rf1.total_hrsextras }}</td><td></td></tr>
+  <tr><td>Adicional Noturno</td><td>{{ rf1.qtdhrsnot }}</td><td>{{ rf1.totaladicnoturno }}</td><td></td></tr>
+  <tr><td>Vale Transporte</td><td>{{ rf1.qtdvt }}</td><td>{{ rf1.totalvt }}</td><td></td></tr>
+  <tr><td>INSS</td><td>{{rf1.indiceInss}}</td><td></td><td>{{ rf1.vrInssEmpregado }}</td></tr>
+  <tr><td>TOTAL</td><td></td><td>{{rf1.proventos}}</td><td>{{ rf1.descontos }}</td></tr>
+  <tr><td><h2>Salario Liquido : {{rf1.salLiquido}}</h2></td></tr>
+
+</table> 
+
+<!-- Fim do Conteudo -->
+  </div>
+</div>
+
+{% endblock %}
+
+
+
